@@ -1,0 +1,104 @@
+.team__member{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    .row{
+        .team__col{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .team__item{   
+            transition: all 0.5s;
+            position: relative;
+            .team__img{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .team__intro{
+                    position: absolute;
+                    right: 0;
+                    bottom: 30px;
+                    width: 70%;
+                    padding: 10px 20px;
+                    text-align: right;
+                    background: rgba(0, 0, 0, .7);
+                    color: $color-white-1;
+                }
+            }
+            .team__hover{
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                transition: all .3s;
+                opacity: 0;
+                border: 20px solid rgba(0, 0, 0, .1);
+                background-color: rgba(255, 255, 255, .9);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .team__text{
+                    text-align: center;
+                    h4{
+                        margin-bottom: 25px;
+                        letter-spacing: 4px;
+                        text-transform: uppercase;
+                        font-size: $fs-1;
+                        color: $color-black-3;
+                    }
+                    p{
+                        margin-bottom: 0;
+                        color: $color-gray-1;
+                        font-size: $fs-0;
+                        font-weight: normal;
+                        line-height: 30px;
+                    }
+                }
+                .team__icon{
+                    
+                    position: absolute;
+                    bottom: 40px;
+                    width: 100%;
+                    transform: translateY(45%);
+                    text-align: center;
+                    font-size: 35px;
+                    
+                    a{
+                        color: $color-black-3;
+                        font-size: 16px;
+                        margin: 0 10px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: $color-yellow-1;
+                        }
+                    }
+                }
+            }
+
+            &:hover{
+                .team__hover{
+                    opacity: 1;
+                }
+            }
+              
+        }
+       
+
+    }
+}
+@include reponsive("large"){
+    .team__member{
+        padding-top: 60px;
+        padding-bottom: 100px;
+        .row{
+            .team__col{
+              margin-bottom: 30px;
+            }
+                  
+            }
+           
+    
+        }
+    }

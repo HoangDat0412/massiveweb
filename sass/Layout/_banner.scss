@@ -1,0 +1,149 @@
+.banner{
+    margin-top: 100px;
+    background: url(../img/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    
+    .row{
+        height: 100%;
+    }
+    .banner__overlay{
+        display: none;
+    }
+    .banner__left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            text-align: center;
+           
+            letter-spacing: 6px;
+            text-align: center;
+            color: $color-white-1 ;
+            margin: 0 0 30px 0;
+            font-weight: normal;
+            line-height: 1.5;
+            font-size: $fs-3;
+        }
+    }
+    .banner__right{
+        padding: 100px 50px;
+        background: rgba(0, 0, 0, .5);
+        h4{
+            color: $color-white-1 ;
+            letter-spacing: 2px;
+            margin: 0 0 30px 0;
+            font-weight: normal;
+            line-height: 1.5;
+            font-size: $fs-5;
+        }
+        p{
+            color: $color-white-1;
+            margin: 0 0 30px;
+            line-height: 30px;
+
+        }
+
+        .banner__progress{
+            padding-top: 30px;
+            .progress{
+                margin-top: 10px;
+                margin-bottom: 50px;
+                height: 20px;
+                border-radius: 0;
+                background-color: #606060;
+                
+                overflow: visible;
+               
+                .progress-bar{
+                    position: relative;
+                    background-color: $color-white-1;
+                    color: $color-black-1;
+                    text-align: left;
+                    overflow: visible;
+                    justify-content: center;
+
+                    span{
+                        color: #222 ;
+                        background-color: #a4a4a4 ;
+                        position: absolute;
+                        top: -28px;
+                        right: -5px;
+                        display: inline-block;
+                        min-width: 25px;
+                        height: 20px;
+                        padding: 0 8px;
+                        text-align: center;
+                        letter-spacing: 0;
+                        border-radius: 30px;
+                        line-height: 20px;
+                        z-index: 3;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                             bottom: -2px;
+                             left: 15px;
+                             display: block;
+                             width: 5px;
+                             height: 5px;
+                             transform: rotate(45deg);
+                             border-style: none;
+                             border-color: #a4a4a4;
+                            border-right: 1px solid #a4a4a4;
+                            background-color: #a4a4a4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include reponsive("large"){
+    .banner{  
+        position: relative;
+        .banner__left{
+            padding-top: 100px;
+            h2{
+               
+            }
+        }
+        .banner__overlay{
+            display: block;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            top: 0;
+            right: 0;
+
+        }
+        .banner__right{
+           background: none;
+            h4{
+               
+            }
+            p{
+               
+            }
+    
+            .banner__progress{
+                .progress{
+                    
+                    
+                   
+                    .progress-bar{
+                       
+                        span{
+                           
+                            &::before{
+                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

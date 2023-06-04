@@ -1,0 +1,102 @@
+.blog{
+    .design__text{
+        padding-bottom: 100px;
+    }
+    .blog__content{
+        .blog__left{
+            padding-left: 11px;
+            padding-right: 11px;
+            position: relative;
+            img{
+                width: 100%;
+                
+            }
+           
+            .blog__intro{
+                
+                position: absolute;
+                bottom: 0;
+                left: 11px;
+                right: 11px;
+                padding: 10px;
+                color: #fff;
+                background: rgba(0, 0, 0, .5);
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .blog__right{
+            height: 309px;
+            padding: 30px 11px;
+            padding-left: 2rem;
+            ul{
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding: 0;
+                
+                li{
+                    a{
+                        transform: up;
+                        text-decoration: none;
+                        color: $color-gray-2;
+                    }
+                    display: inline-block;
+                   
+                    transition: all 0.5s;
+                    &:hover{
+                        a{
+                            color: $color-yellow-1;
+                        }
+                       
+                    }
+                }
+            }
+            h4{
+                a{
+                    letter-spacing: 1px;
+                    color: #333;
+                    font-weight: normal;
+                    line-height: 1.5;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+                margin-bottom: 10px;
+                
+
+            }
+            .date{
+                color: #909090;
+                font-size: 12px;
+                margin-bottom: 25px;
+                 padding-top: 0;
+                 letter-spacing: 2px;
+                 text-transform: uppercase;
+                 a{
+                    color: #909090;
+                    font-size: 12px;
+                    transition: all .3s;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-yellow-1;
+                    }
+                 }
+            }
+            p{
+                margin: 0 0 30px;
+                color: #7e7e7e;
+                line-height: 30px;
+            }
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #bbb;
+                transition: all 0.3s;
+                &:hover{
+                    color: $color-black-3;
+                   
+                }
+            }
+        }
+    }
+}

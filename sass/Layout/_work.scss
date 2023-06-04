@@ -1,0 +1,109 @@
+.work{
+    margin-top: 100px;
+    background: url(../../img/pattern-2.png);
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    .nav{
+        border: none;
+        .nav-item{
+            padding-right: 0;
+            .nav-link{
+               
+                position: relative;
+                transition: all .3s ease;
+                 color: #434343;
+                 border-radius: 0;
+                 background: rgba(34, 34, 34, .05);
+                 padding: 35px 70px;
+                 i{
+                    display: inline-block;
+                    font-size: 36px;
+                   
+                 }
+                 &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    margin-left: -10px;
+                    transition: all .3s ease;
+                    opacity: 0;
+                    border-width: 10px 10px 0 10px;
+                    border-style: solid;
+                    border-color: #fff transparent transparent transparent;
+                 }
+                 &:hover{
+                    background-color: #fff;
+
+                 }
+                 &:hover::after{
+                    opacity: 1;
+                 }
+                 &.active{
+                    background-color: #fff;
+                }
+                &.active::after{
+                    opacity: 1;
+                 }
+            }
+        }
+        
+    }
+    .nav-tabs{
+        .nav-link{
+            border: none;
+        }
+    }
+
+    .work__content{
+        padding-top: 55px;
+        .heading-title{
+            margin-bottom: 40px;
+            span{
+                letter-spacing: 2px;
+                color: #7e7e7e;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+            h2{
+                margin-bottom: 0;
+                letter-spacing: 2px;
+                font-weight: normal;
+                text-transform: uppercase;
+                color: #333;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@include reponsive("large"){
+    .work{
+        .nav{
+           
+            .nav-item{
+               margin-bottom: 30px;
+            }
+            
+        }    
+}
+}
+@include reponsive("medium"){
+    .work{
+        .nav{
+           
+            .nav-item{
+              margin-right: 0;
+              .nav-link{
+                width: 100%;
+              }
+
+            }
+            
+        }    
+}
+}

@@ -1,0 +1,44 @@
+.contact{
+    margin: 100px 0;
+    background: url(../img/8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact__content{
+        padding: 150px 0;
+        text-align: center;
+        h4{
+            letter-spacing: 3px;
+            font-size: $fs-1 + 1;
+            color: $color-yellow-1;
+        }
+        h2{
+            letter-spacing: 2px;
+            font-weight: normal;
+            color: $color-white-1;
+            margin: 0 0 30px 0;
+            font-size: $fs-8;
+        }
+        button{
+            @include styleButton($color-yellow-1,$color-white-1,$color-white-1,$color-black-3)
+        }
+    }
+}
+
+@include reponsive("medium"){
+    .contact{
+       
+        .contact__content{
+            
+           
+            h2{
+               
+                font-size: $fs-8 - 15;
+            }
+        }
+    }
+}

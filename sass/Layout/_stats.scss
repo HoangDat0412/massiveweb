@@ -1,0 +1,38 @@
+.stats{
+    background: #1b1b1b;
+    padding: 100px 0;
+    .stats__content{
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: center;
+        .stats__icon{
+            i{
+                padding-right: 10px;
+                font-size: 36px;
+                color: #fff ;              
+            }
+            span{
+                color: #fff;
+                letter-spacing: 2px;
+                margin: 0 0 30px 0;
+                font-size: 36px;
+                 font-weight: normal;
+                line-height: 1.5;
+            }
+        }
+        .stats__text{
+            color: #fff;
+            letter-spacing: 2px;
+            padding-top: 20px;
+        }
+    }
+}
+
+@include reponsive("large"){
+    .stats{
+        .stats__content{
+            
+           margin-bottom: 35px;
+        }
+    }
+}
